@@ -28,9 +28,7 @@ func init() {
 	dbName := os.Getenv("DB_NAME")
 
 	URI := fmt.Sprintf("mongodb+srv://%s:%s@%s.zevxmja.mongodb.net/", dbUser, dbPass, dbName)
-	// fmt.Println(URI)
 	clientOptions := options.Client().ApplyURI(URI)
-	// clientOptions := options.Client().ApplyURI("mongodb+srv://danielnextjs:danielbelajarnextjs@belajar-nextjs.zevxmja.mongodb.net/")
 
 	var err error
 
